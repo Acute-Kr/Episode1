@@ -1,0 +1,51 @@
+.logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.insight .tag{
+    display: flex;
+    list-style: none;
+    color:skyblue;
+}
+
+
+
+.title div{
+    display: flex;
+}
+
+
+
+.icon{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon i{
+    display: flex;
+    
+}
+
+
+.owner{
+    display: flex;
+}
+
+.owner img{
+    width:50px;
+    height:50px;
+}
+
+
+
+.upNext div{
+    display: flex;
+}
+
+.upNext div img {
+    width: 180px;
+    height: 100px;
+
+}
