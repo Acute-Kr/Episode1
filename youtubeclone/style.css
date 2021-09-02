@@ -102,9 +102,33 @@ button{
     color: var(--gray-dark-color);
 }
 
+.insight .icon button i.active{
+    color: var(--blue-color);
+}
 
 .owner{
     display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--gray-light-color);
+    border-bottom: 1px solid var(--gray-light-color);
+    
+    
+}
+
+.owner .user{
+    display: flex;
+    align-items: center;
+}
+
+.owner .user .name{
+    display: flex;
+    flex-direction: column;
+}
+
+.owner .user img{
+    width: var(--acatar-size);
+    height: var(--acatar-size);
+    border-radius: 50%;
 }
 
 .owner img{
@@ -112,14 +136,59 @@ button{
     height:50px;
 }
 
+.owner .subscribe{
+    text-transform: uppercase;
+    color: var(--red-color);
+    font-size: var(--font-medium);
+}
+
 
 
 .upNext div{
+    padding: 0 var(--padding);
     display: flex;
 }
 
-.upNext div img {
-    width: 180px;
-    height: 100px;
+.upNext > .title{
+    font-size: var(--font-medium);
+    color: var(--gray-dark-color);
+    margin-bottom: var(--padding);
+}
 
+.upNext .main{
+    display: flex;
+    margin-top: var(--padding);
+}
+
+.upNext .main .img{
+    flex: 1 1 35%
+}
+
+.upNext .main .img img{
+    width: 100%;
+}
+
+.upNext .main div{
+    flex: 1 1 60%;
+}
+
+.upNext .main button{
+    flex: 1 1 5%;
+}
+
+.upNext .main .info{
+    display: flex;
+    flex-direction: column;
+}
+
+.insightUpnext{
+    display:flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .insightUpnext{
+        flex-direction: row;
+        margin: var(--padding) 0;
+    }
 }
